@@ -1,0 +1,323 @@
+@font-face {
+  font-family: Dela Gothic One;
+  src: url(/resources/fonts/Dela_Gothic_One/DelaGothicOne-Regular.ttf);
+}
+* {
+  box-sizing: border-box;
+}
+
+.banner {
+  width: 100%;
+  display: flex;
+  top: 0;
+  align-items: center;
+  height: 0;
+}
+
+.flex-container {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  text-align: right;
+}
+
+#title {
+  position: left;
+  margin: 190px 0px 0px 50px;
+
+  font-family: "Dela Gothic One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100px;
+
+  color: #000000;
+}
+
+body {
+  background-color: #f0d7b0;
+}
+
+nav {
+  margin-left: auto;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-top: 100px;
+  margin-right: 10px;
+  transform: rotate(50deg);
+  box-align: right;
+  font-family: "Dela Gothic One";
+  font-weight: 400;
+  font-size: 20px;
+
+  text-decoration: underline;
+  color: #001aff;
+}
+
+.bold {
+  font-weight: 100;
+}
+
+a:hover {
+  color: white;
+}
+
+a {
+  color: black;
+}
+
+h3 {
+  position: absolute;
+  top: 310px;
+  right: 90px;
+  height: 600px;
+  width: 582px;
+
+  font-family: "Dela Gothic One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  color: #ffffff;
+  float: right;
+}
+
+.img1 {
+  position: absolute;
+  width: 499px;
+  height: 479px;
+  left: 120px;
+  top: 455px;
+
+  background: url(PZportrait.png);
+  border: 5px solid #000000;
+  z-index: 2;
+  border-radius: 50%;
+}
+
+.img2 {
+  position: absolute;
+  width: 728px;
+  height: 485px;
+  left: 369px;
+  top: 753px;
+
+  background: url(Os.png);
+  border-radius: 5% #000000;
+}
+
+.img3 {
+  position: absolute;
+  width: 467px;
+  height: 449px;
+  left: 219px;
+  top: 1176px;
+
+  background: url(chair.png);
+  border: 5px solid #000000;
+
+  border-radius: 50%;
+}
+
+.rect1 {
+  position: absolute;
+  width: 552px;
+  height: 0px;
+  left: 0px;
+  top: 1100px;
+  right: 0px;
+
+  border: 10px solid #ff0000;
+  transform: rotate(-90deg);
+}
+
+.rect2 {
+  position: absolute;
+  width: 781px;
+  height: 0px;
+  left: 900px;
+  top: 952px;
+
+  border: 17px solid #ff0000;
+  transform: rotate(-90deg);
+}
+
+.rect3 {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 40px;
+  left: 0px;
+
+  background: #001aff;
+}
+
+.triangle {
+  width: 0px;
+  height: 0px;
+  top: -300px;
+  border-left: 350px solid transparent;
+  border-right: 350px solid transparent;
+  border-top: 2200px solid #ff0000;
+
+  mix-blend-mode: multiply;
+  transform: rotate(-38deg);
+  position: absolute;
+  z-index: 0;
+  left: 350px;
+  right: 0;
+}
+
+/* search button */
+body {
+  color: #fff;
+  margin: 0;
+}
+
+#content {
+  position: relative;
+  height: 50px;
+  width: 300px;
+  top: 270px;
+  left: 1520px;
+  transform: translate(-50%, -50%);
+}
+
+#content.on {
+  -webkit-animation-name: in-out;
+  animation-name: in-out;
+  -webkit-animation-duration: 0.7s;
+  animation-duration: 0.7s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+input {
+  box-sizing: border-box;
+  width: 50px;
+  height: 50px;
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+  background: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: Roboto;
+  outline: 0;
+  -webkit-transition: width 0.4s ease-in-out, border-radius 0.8s ease-in-out,
+    padding 0.2s;
+  transition: width 0.4s ease-in-out, border-radius 0.8s ease-in-out,
+    padding 0.2s;
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+  -webkit-transform: translate(-100%, -50%);
+  -ms-transform: translate(-100%, -50%);
+  transform: translate(-100%, -50%);
+}
+
+.search {
+  background: none;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  border-radius: 100%;
+  outline: 0;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  -webkit-transform: translate(-100%, -50%);
+  -ms-transform: translate(-100%, -50%);
+  transform: translate(-100%, -50%);
+}
+
+.search:before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 4px;
+  background-color: #fff;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin-top: 26px;
+  margin-left: 17px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.close {
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+.close:before {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 4px;
+  margin-top: -1px;
+  margin-left: -13px;
+  background-color: #fff;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.close:after {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 4px;
+  background-color: #fff;
+  margin-top: -1px;
+  margin-left: -13px;
+  cursor: pointer;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.square {
+  box-sizing: border-box;
+  padding: 0 40px 0 10px;
+  width: 300px;
+  height: 50px;
+  border: 4px solid #ffffff;
+  border-radius: 0;
+  background: none;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  outline: 0;
+  -webkit-transition: width 0.4s ease-in-out, border-radius 0.4s ease-in-out,
+    padding 0.2s;
+  transition: width 0.4s ease-in-out, border-radius 0.4s ease-in-out,
+    padding 0.2s;
+  -webkit-transition-delay: 0.4s, 0s, 0.4s;
+  transition-delay: 0.4s, 0s, 0.4s;
+  -webkit-transform: translate(-100%, -50%);
+  -ms-transform: translate(-100%, -50%);
+  transform: translate(-100%, -50%);
+}

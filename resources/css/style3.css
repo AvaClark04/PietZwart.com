@@ -1,0 +1,327 @@
+@font-face {
+  font-family: Dela Gothic One;
+  src: url(/resources/fonts/Dela_Gothic_One/DelaGothicOne-Regular.ttf);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0d7b0;
+}
+
+.flex-container {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  text-align: right;
+}
+
+/* menu 1 */
+.banner {
+  width: 100%;
+  display: flex;
+  top: 0;
+  align-items: center;
+  height: 0;
+}
+
+.nav1 {
+  margin-left: auto;
+}
+
+.nav1 ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav1 li {
+  margin-top: 100px;
+  margin-right: 10px;
+  transform: rotate(50deg);
+  box-align: right;
+  font-family: "Dela Gothic One";
+  font-weight: 400;
+  font-size: 20px;
+
+  text-decoration: underline;
+  color: #001aff;
+}
+
+.nav1 a {
+  color: black;
+}
+
+/* menu 2 */
+.banner2 {
+  display: flex;
+  align-items: right;
+  position: relative;
+  top: 180px;
+  flex-direction: row;
+}
+
+.nav2 {
+  margin-right: auto;
+}
+
+.nav1 ul {
+  display: flex;
+}
+
+.nav2 li {
+  margin-right: 20px;
+  padding: 15px;
+  transform: rotate(-50deg);
+  box-align: right;
+  font-family: "Dela Gothic One";
+  font-weight: 400;
+  font-size: 20px;
+
+  text-decoration: underline;
+  color: #001aff;
+  font-size: 28px;
+}
+
+.nav2 a {
+  color: #000000;
+}
+
+a:hover {
+  color: white;
+}
+a {
+  color: black;
+}
+
+#title {
+  position: left;
+  margin: 150px 0px 0px 50px;
+
+  font-family: "Dela Gothic One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100px;
+
+  color: #000000;
+}
+
+.rect6 {
+  position: absolute;
+  width: 700px;
+  height: 0px;
+  left: -335px;
+  top: 0px;
+
+  border: 15px solid #001aff;
+  transform: rotate(-90deg);
+}
+.rect7 {
+  position: absolute;
+  width: 781px;
+  height: 0px;
+  right: -380px;
+  top: 590px;
+
+  border: 17px solid #001aff;
+  transform: rotate(-90deg);
+}
+
+.rect8 {
+  position: fixed;
+  bottom: 0;
+  left: 0px;
+  width: 100%;
+  height: 40px;
+
+  background: #ff0000;
+}
+
+/* image carousel */
+.carousel {
+  width: 600px;
+  margin: auto;
+}
+
+.carousel-container {
+  display: flex;
+  overflow-y: scroll;
+  scroll-snap-type: x mandatory;
+  width: 100%;
+}
+
+.carousel-container img {
+  scroll-snap-align: start;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2em;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.prev {
+  left: 400px;
+}
+
+.next {
+  right: 400px;
+}
+
+/* search button */
+body {
+  color: #fff;
+  margin: 0;
+}
+
+#content {
+  position: relative;
+  height: 50px;
+  width: 300px;
+  top: 270px;
+  left: 1520px;
+  transform: translate(-50%, -50%);
+}
+
+#content.on {
+  -webkit-animation-name: in-out;
+  animation-name: in-out;
+  -webkit-animation-duration: 0.7s;
+  animation-duration: 0.7s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+input {
+  box-sizing: border-box;
+  width: 50px;
+  height: 50px;
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+  background: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: Roboto;
+  outline: 0;
+  -webkit-transition: width 0.4s ease-in-out, border-radius 0.8s ease-in-out,
+    padding 0.2s;
+  transition: width 0.4s ease-in-out, border-radius 0.8s ease-in-out,
+    padding 0.2s;
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+  -webkit-transform: translate(-100%, -50%);
+  -ms-transform: translate(-100%, -50%);
+  transform: translate(-100%, -50%);
+}
+
+.search {
+  background: none;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  border-radius: 100%;
+  outline: 0;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  -webkit-transform: translate(-100%, -50%);
+  -ms-transform: translate(-100%, -50%);
+  transform: translate(-100%, -50%);
+}
+
+.search:before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 4px;
+  background-color: #fff;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin-top: 26px;
+  margin-left: 17px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.close {
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+.close:before {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 4px;
+  margin-top: -1px;
+  margin-left: -13px;
+  background-color: #fff;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.close:after {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 4px;
+  background-color: #fff;
+  margin-top: -1px;
+  margin-left: -13px;
+  cursor: pointer;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.square {
+  box-sizing: border-box;
+  padding: 0 40px 0 10px;
+  width: 300px;
+  height: 50px;
+  border: 4px solid #ffffff;
+  border-radius: 0;
+  background: none;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  outline: 0;
+  -webkit-transition: width 0.4s ease-in-out, border-radius 0.4s ease-in-out,
+    padding 0.2s;
+  transition: width 0.4s ease-in-out, border-radius 0.4s ease-in-out,
+    padding 0.2s;
+  -webkit-transition-delay: 0.4s, 0s, 0.4s;
+  transition-delay: 0.4s, 0s, 0.4s;
+  -webkit-transform: translate(-100%, -50%);
+  -ms-transform: translate(-100%, -50%);
+  transform: translate(-100%, -50%);
+}
